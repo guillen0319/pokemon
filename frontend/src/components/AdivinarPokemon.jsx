@@ -11,7 +11,7 @@ function AdivinarPokemon() {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    audioRef.current = new Audio("https://vgmsite.com/soundtracks/pokemon-firered-leafgreen/xlqmofputs/1-03.%20Pallet%20Town.mp3");    audioRef.current.loop = true;
+    audioRef.current = new Audio("/musica.m4a");    
     audioRef.current.volume = 0.4;
     return () => {
       audioRef.current.pause();
